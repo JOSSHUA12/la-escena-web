@@ -1848,3 +1848,257 @@ a {
     font-weight: 700;
 }
 
+
+/* =========================================================
+   LA ESCENA — MOBILE FIRST FINAL OVERRIDES
+   Objetivo: móvil limpio, sin desbordamientos.
+   Desktop conserva el layout actual.
+========================================================= */
+
+/* Evita desbordamientos horizontales en toda la página */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+
+    /* =========================
+       GRUPO LA ESCENA
+       La foto se adapta al ancho real
+       del teléfono, sin altura fija gigante.
+    ========================= */
+
+    .artist-section {
+        padding: 72px 0 80px;
+    }
+
+    .artist-section .container {
+        width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
+        box-sizing: border-box;
+    }
+
+    .artist-heading {
+        margin-bottom: 28px;
+    }
+
+    .artist-heading h2 {
+        font-size: clamp(58px, 18vw, 78px);
+        line-height: .88;
+        letter-spacing: -4px;
+    }
+
+    .artist-heading p {
+        max-width: 100%;
+        margin-top: 18px;
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .artist-photo {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 4 / 5;
+        overflow: hidden;
+    }
+
+    .artist-photo > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        transform: none;
+    }
+
+    .artist-photo-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0,0,0,.10) 0%,
+                rgba(0,0,0,.12) 45%,
+                rgba(0,0,0,.82) 100%
+            );
+    }
+
+    .artist-logo {
+        width: clamp(105px, 31vw, 145px);
+        right: 14px;
+        top: 18px;
+        transform: none;
+    }
+
+    .artist-photo-caption {
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+        gap: 6px;
+    }
+
+    .artist-photo-caption span {
+        font-size: 8px;
+        letter-spacing: 2.5px;
+    }
+
+    .artist-photo-caption strong {
+        font-size: clamp(11px, 3.3vw, 14px);
+        letter-spacing: 1px;
+    }
+
+    .artist-bottom {
+        display: block;
+        padding-top: 25px;
+    }
+
+    .artist-bottom > p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 22px;
+    }
+
+    .music-genres {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+
+    .music-genres span {
+        font-size: 8px;
+        padding: 7px 9px;
+    }
+
+    /* =========================
+       SERVICIOS
+       Una tarjeta debajo de otra.
+       Sin alterar el orden ni el
+       contenido del HTML.
+    ========================= */
+
+    .services-section {
+        padding: 72px 18px 80px;
+        box-sizing: border-box;
+    }
+
+    .section-header {
+        width: 100%;
+        margin-bottom: 42px;
+        text-align: left;
+    }
+
+    .section-header .section-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .section-header h2 {
+        font-size: clamp(38px, 12vw, 52px);
+        line-height: .98;
+        letter-spacing: -2px;
+        margin-bottom: 18px;
+    }
+
+    .section-header p {
+        max-width: 100%;
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .services-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: none;
+        gap: 14px;
+        margin: 0;
+        background: transparent;
+        border: 0;
+    }
+
+    .service-card {
+        width: 100%;
+        min-height: 0;
+        height: auto;
+        aspect-ratio: 16 / 10;
+        box-sizing: border-box;
+        border-radius: 3px;
+        background-position: center center;
+        display: flex;
+        align-items: flex-end;
+        transform: none;
+    }
+
+    .service-card:hover {
+        transform: none;
+    }
+
+    .service-content {
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+        padding: 22px 20px;
+    }
+
+    .service-number {
+        position: static;
+        display: block;
+        margin-bottom: 7px;
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .service-content h3 {
+        margin: 0 0 7px;
+        font-size: clamp(24px, 7vw, 31px);
+        line-height: 1;
+    }
+
+    .service-content p {
+        margin: 0 0 12px;
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 1.45;
+    }
+
+    .service-link {
+        font-size: 11px;
+        letter-spacing: .8px;
+    }
+}
+
+/* Teléfonos muy estrechos */
+@media (max-width: 380px) {
+
+    .artist-section .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .services-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .artist-photo {
+        aspect-ratio: 3 / 4;
+    }
+
+    .service-card {
+        aspect-ratio: 4 / 3;
+    }
+
+    .service-content {
+        padding: 18px;
+    }
+
+    .service-content p {
+        font-size: 12px;
+    }
+}
