@@ -225,7 +225,7 @@ a {
 
     color: #c9a227;
 
-    font-size: 10px;
+    font-size: 16px;
     font-weight: 800;
 
     letter-spacing: 4px;
@@ -284,9 +284,9 @@ a {
 
     margin: 35px 0;
 
-    color: #b5b5b5;
+    color: #dad8d8;
 
-    font-size: 16px;
+    font-size: 17px;
 
     line-height: 1.7;
 
@@ -362,9 +362,9 @@ a {
 
     gap: 12px;
 
-    color: #777;
+    color: #e8e4e4;
 
-    font-size: 9px;
+    font-size: 12px;
 
     letter-spacing: 3px;
 }
@@ -375,7 +375,7 @@ a {
     width: 35px;
     height: 1px;
 
-    background: #555;
+    background: #bcb9b9;
 
     position: relative;
 }
@@ -391,7 +391,7 @@ a {
     width: 8px;
     height: 5px;
 
-    background: #c9a227;
+    background: #dcae17;
 
     animation: scrollMove 2s ease-in-out infinite;
 }
@@ -510,8 +510,8 @@ a {
 }
 
 .section-heading > p:last-child {
-    color: #777;
-    font-size: 17px;
+    color: #100f0f;
+    font-size: 18px;
 }
 
 
@@ -579,7 +579,7 @@ a {
 
     letter-spacing: -6px;
 
-    font-weight: 300;
+    font-weight: 700;
 
     color: #ffffff;
 }
@@ -597,7 +597,7 @@ a {
 
     margin-top: 28px;
 
-    color: #999;
+    color: #e3dede;
 
     font-size: 16px;
 
