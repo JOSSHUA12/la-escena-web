@@ -585,7 +585,7 @@ a {
 }
 
 
-.artist-heading h2 strong {
+.artist-heading h2 strong c {
     font-weight: 900;
 
     color: #c9a227;
@@ -800,7 +800,7 @@ a {
 
     color: #c9a227;
 
-    font-size: 8px;
+    font-size: 10px;
 
     font-weight: 700;
 
@@ -1291,7 +1291,7 @@ a {
     }
 
     .hero-label {
-        font-size: 8px;
+        font-size: 12px;
         letter-spacing: 2px;
     }
 
@@ -1300,9 +1300,9 @@ a {
     }
 
     .hero h1 {
-        font-size: clamp(45px, 13vw, 65px);
-        letter-spacing: -2px;
-        line-height: 0.92;
+        font-size: clamp(36px, 10vw, 50px);
+        letter-spacing: -2.5px;
+        line-height: 0.99;
     }
 
     .hero-text {
