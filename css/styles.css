@@ -248,26 +248,26 @@ a {
     max-width: 900px;
 
     font-size: clamp(
-        48px,
-        7.5vw,
-        105px
+        45px,
+        7.3vw,
+        100px
     );
 
     line-height: 0.88;
 
-    letter-spacing: -4px;
+    letter-spacing: -5px;
 
     font-weight: 300;
 
     text-transform: uppercase;
 
-    animation: heroTitle 1s ease forwards;
+    animation: heroTitle 2s ease forwards;
 }
 
 .hero h1 strong {
     display: block;
 
-    font-weight: 900;
+    font-weight: 700;
 
     color: #ffffff;
 }
