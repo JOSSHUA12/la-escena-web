@@ -1300,8 +1300,8 @@ a {
     }
 
     .hero h1 {
-        font-size: clamp(36px, 10vw, 50px);
-        letter-spacing: -2.5px;
+        font-size: clamp(35px, 9.5vw, 48px);
+        letter-spacing: -2.6px;
         line-height: 0.99;
     }
 
