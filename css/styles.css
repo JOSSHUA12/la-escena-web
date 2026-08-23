@@ -594,7 +594,7 @@ a {
 
   transform: scale(1.02);
 
-  transition: transform 1.2s ease;
+  transition: transform 1.3s ease;
 }
 
 .artist-photo:hover > img {
@@ -1497,9 +1497,9 @@ a {
 
   gap: 1px;
 
-  background: rgba(201, 162, 39, 0.18);
+  background: transparent;
 
-  border: 1px solid rgba(201, 162, 39, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.18);
 }
 
 /* CARD */
@@ -1844,10 +1844,13 @@ img {
     flex-direction: column;
     width: 100%;
     max-width: none;
-    gap: 14px;
-    margin: 0;
+    gap: 26px;
+    margin:0;
     background: transparent;
     border: 0;
+
+    
+
   }
 
   .service-card {
@@ -1861,6 +1864,8 @@ img {
     display: flex;
     align-items: flex-end;
     transform: none;
+
+    
   }
 
   .service-card:hover {
