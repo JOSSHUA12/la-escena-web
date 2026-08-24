@@ -240,7 +240,7 @@ a {
 .hero h1 {
   max-width: 900px;
 
-  font-size: clamp(48px, 7.5vw, 105px);
+  font-size: clamp(47px, 7vw, 98px);
 
   line-height: 0.88;
 
@@ -1203,7 +1203,7 @@ a {
   }
 
   .hero h1 {
-    font-size: clamp(38px, 12vw, 60px);
+    font-size: clamp(36px, 9vw, 57px);
     letter-spacing: -2px;
     line-height: 0.92;
   }
