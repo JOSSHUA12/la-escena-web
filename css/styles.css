@@ -951,49 +951,6 @@ a {
   color: #ffffff;
 }
 
-/* =========================================
-   RESPONSIVE
-========================================= */
-
-@media (max-width: 800px) {
-  .services-section {
-    padding: 80px 5%;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .service-card {
-    min-height: 390px;
-  }
-
-  .service-content {
-    padding: 30px;
-  }
-
-  .service-content h3 {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  .service-card {
-    min-height: 360px;
-  }
-
-  .service-content {
-    padding: 24px;
-  }
-
-  .service-content h3 {
-    font-size: 27px;
-  }
-
-  .service-content p {
-    font-size: 14px;
-  }
-}
 
 /* =========================
    EXPERIENCES
@@ -1056,40 +1013,6 @@ a {
   color: #c9a227;
   font-size: 30px;
   margin-bottom: 10px;
-}
-
-/* =========================
-   VIDEO
-========================= */
-
-.video-placeholder {
-  width: 100%;
-  min-height: 0;
-  display: block;
-  background: #050505;
-  border: 1px solid #333;
-  overflow: hidden;
-}
-
-.video-experiencia {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: #000;
-  overflow: hidden;
-}
-
-.video-experiencia iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-@media (max-width: 767px) {
-  .video-placeholder,
-  .video-experiencia {
-    border-radius: 18px;
-  }
 }
 
 /* =========================
@@ -1225,72 +1148,6 @@ a {
 
   .hero-background {
     background-position: 62% center;
-
-    /* =========================
-   SERVICIOS - MOBILE
-========================= */
-
-    .services-section {
-      padding: 85px 0;
-    }
-
-    .services-header {
-      margin-bottom: 45px;
-    }
-
-    .services-header h2 {
-      font-size: 48px;
-
-      letter-spacing: -2px;
-    }
-
-    .services-header p {
-      margin-top: 22px;
-
-      font-size: 13px;
-    }
-
-    /* Una columna */
-
-    .services-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .service-card {
-      min-height: auto;
-
-      padding: 32px 28px;
-    }
-
-    .service-card h3 {
-      font-size: 23px;
-    }
-
-    .service-card p {
-      font-size: 13px;
-    }
-
-    /* CTA */
-
-    .services-cta {
-      flex-direction: column;
-
-      align-items: flex-start;
-
-      padding: 32px 28px;
-
-      margin-top: 45px;
-    }
-
-    .services-cta h3 {
-      font-size: 23px;
-    }
-
-    .services-cta .btn {
-      width: 100%;
-
-      text-align: center;
-    }
   }
 
   .hero-gradient {
@@ -1304,55 +1161,6 @@ a {
       linear-gradient(0deg, rgba(0, 0, 0, 0.55), transparent 60%);
   }
 
-  /* =========================
-       GRUPO - MOBILE
-    ========================= */
-
-  .group-section {
-    min-height: auto;
-  }
-
-  .group-container {
-    grid-template-columns: 1fr;
-
-    gap: 40px;
-
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-
-  .group-content h2 {
-    font-size: 70px;
-
-    letter-spacing: -3px;
-  }
-
-  .group-description {
-    font-size: 14px;
-  }
-
-  .music-genres {
-    gap: 7px;
-  }
-
-  .music-genres span {
-    font-size: 8px;
-    padding: 7px 10px;
-  }
-
-  .group-logo {
-    min-height: 350px;
-  }
-
-  .logo-ring {
-    width: 300px;
-    height: 300px;
-  }
-
-  .group-logo img {
-    width: 320px;
-  }
-
   .artist-section {
     padding: 80px 0 90px;
   }
@@ -1363,19 +1171,16 @@ a {
 
   .artist-heading h2 {
     font-size: 72px;
-
     letter-spacing: -3px;
   }
 
   .artist-heading p {
     font-size: 14px;
-
     margin-top: 22px;
   }
 
   .artist-photo {
     height: 620px;
-
     min-height: 0;
   }
 
@@ -1383,300 +1188,37 @@ a {
     object-position: 52% center;
   }
 
-  /* Logo más pequeño */
-
   .artist-logo {
     width: 145px;
-
     right: 20px;
-
     top: 35px;
-
     transform: none;
   }
 
-  /* Texto inferior */
-
   .artist-photo-caption {
     left: 25px;
-
     bottom: 30px;
   }
 
   .artist-photo-caption span {
     font-size: 9px;
-
     letter-spacing: 3px;
   }
 
   .artist-photo-caption strong {
     font-size: 13px;
-
     letter-spacing: 1px;
   }
 
-  /* Parte inferior */
-
   .artist-bottom {
     grid-template-columns: 1fr;
-
     gap: 25px;
-
     padding-top: 30px;
   }
 
   .artist-bottom > p {
     font-size: 13px;
   }
-}
-
-/* =========================
-   SERVICIOS
-========================= */
-
-.services-section {
-  position: relative;
-
-  padding: 120px 0;
-
-  background: #090909;
-
-  overflow: hidden;
-}
-
-/* HEADER */
-
-.services-header {
-  max-width: 850px;
-
-  margin-bottom: 65px;
-}
-
-.services-header h2 {
-  margin: 0;
-
-  max-width: 800px;
-
-  font-size: clamp(48px, 6vw, 82px);
-
-  line-height: 0.95;
-
-  letter-spacing: -3px;
-
-  font-weight: 300;
-
-  color: #ffffff;
-}
-
-.services-header h2 strong {
-  display: block;
-
-  color: #c9a227;
-
-  font-weight: 800;
-}
-
-.services-header p {
-  max-width: 650px;
-
-  margin-top: 30px;
-
-  color: #858585;
-
-  font-size: 15px;
-
-  line-height: 1.8;
-}
-
-/* GRID */
-
-.services-grid {
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 1px;
-
-  background: transparent;
-
-  border: 1px solid rgba(0, 0, 0, 0.18);
-}
-
-/* CARD */
-
-.service-card {
-  position: relative;
-
-  min-height: 330px;
-
-  padding: 40px;
-
-  background: #0b0b0b;
-
-  transition:
-    background 0.35s ease,
-    transform 0.35s ease;
-}
-
-.service-card:hover {
-  background: #111111;
-
-  transform: translateY(-5px);
-
-  z-index: 2;
-}
-
-/* SERVICIO PRINCIPAL */
-
-.service-featured {
-  background: linear-gradient(145deg, #111111, #080808);
-}
-
-.service-featured::before {
-  content: "";
-
-  position: absolute;
-
-  left: 0;
-  top: 0;
-
-  width: 3px;
-  height: 100%;
-
-  background: #c9a227;
-}
-
-/* NUMBER */
-
-.service-number {
-  position: absolute;
-
-  top: 28px;
-  right: 30px;
-
-  color: rgba(201, 162, 39, 0.35);
-
-  font-size: 11px;
-
-  font-weight: 800;
-
-  letter-spacing: 2px;
-}
-
-/* ICON */
-
-.service-icon {
-  width: 48px;
-  height: 48px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  margin-bottom: 28px;
-
-  border: 1px solid rgba(201, 162, 39, 0.5);
-
-  color: #c9a227;
-
-  font-size: 21px;
-}
-
-/* TITLE */
-
-.service-card h3 {
-  margin: 0 0 18px;
-
-  color: #ffffff;
-
-  font-size: 25px;
-
-  font-weight: 800;
-
-  letter-spacing: -0.5px;
-}
-
-/* DESCRIPTION */
-
-.service-card p {
-  margin: 0;
-
-  max-width: 380px;
-
-  color: #ffffff;
-
-  font-size: 13px;
-
-  line-height: 1.8;
-}
-
-/* TAGS */
-
-.service-tags {
-  display: flex;
-
-  flex-wrap: wrap;
-
-  gap: 7px;
-
-  margin-top: 28px;
-}
-
-.service-tags span {
-  padding: 6px 9px;
-
-  border: 1px solid rgba(255, 255, 255, 0.1);
-
-  color: #777;
-
-  font-size: 7px;
-
-  font-weight: 700;
-
-  letter-spacing: 1px;
-}
-
-/* =========================
-   CTA
-========================= */
-
-.services-cta {
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  gap: 40px;
-
-  margin-top: 70px;
-
-  padding: 45px 50px;
-
-  border: 1px solid rgba(201, 162, 39, 0.25);
-
-  background: linear-gradient(110deg, #101010, #080808);
-}
-
-.services-cta span {
-  color: #c9a227;
-
-  font-size: 9px;
-
-  font-weight: 800;
-
-  letter-spacing: 3px;
-}
-
-.services-cta h3 {
-  margin: 12px 0 0;
-
-  color: #ffffff;
-
-  font-size: 28px;
-
-  font-weight: 700;
 }
 
 /* =========================================================
@@ -1935,316 +1477,211 @@ img {
   }
 }
 
-/* =========================================================
-   EXPERIENCIA EN VIVO — VIDEO LOCAL
-   ========================================================= */
-
-.video-experiencia {
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-    margin: 15px auto 0;
-    overflow: hidden;
-    border-radius: 20px;
-    background: #050505;
-    box-shadow:
-        0 20px 45px rgba(0, 0, 0, 0.35),
-        0 0 0 1px rgba(212, 175, 55, 0.15);
-}
-
-.video-local {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: 720px;
-    object-fit: cover;
-}
-
-.video-local-overlay {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.05) 35%,
-            rgba(0, 0, 0, 0.72) 100%
-        );
-}
-
-.video-local-content {
-    position: absolute;
-    left: 22px;
-    right: 22px;
-    bottom: 22px;
-    z-index: 2;
-    pointer-events: none;
-}
-
-.video-local-content span {
-    display: block;
-    margin-bottom: 6px;
-    color: #d4af37;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-.video-local-content strong {
-    display: block;
-    color: #fff;
-    font-size: clamp(18px, 3vw, 28px);
-    font-weight: 700;
-    letter-spacing: 1px;
-}
 
 /* =========================================================
-   MOBILE
+   VIDEO — EXPERIENCIA EN VIVO
    ========================================================= */
-
-@media (max-width: 767px) {
-
-    .video-experiencia {
-        width: 100%;
-        margin-top: 28px;
-        border-radius: 18px;
-    }
-
-    .video-local {
-        width: 100%;
-        max-height: none;
-        aspect-ratio: 9 / 16;
-        object-fit: cover;
-    }
-
-    .video-local-content {
-        left: 16px;
-        right: 16px;
-        bottom: 18px;
-    }
-
-    .video-local-content span {
-        font-size: 9px;
-        letter-spacing: 2.5px;
-    }
-
-    .video-local-content strong {
-        font-size: 19px;
-    }
-}/* =========================================================
-   VIDEO EXPERIENCIA EN VIVO — FULL WIDTH MOBILE
-   ========================================================= */
-
-@media (max-width: 767px) {
-
-    #videos .container {
-        width: 100%;
-        max-width: none;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    #videos .section-heading {
-        padding-left: 35px;
-        padding-right: 35px;
-    }
-
-    #videos .video-placeholder {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        border: none;
-        background: transparent;
-    }
-
-    #videos .video-placeholder > div {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    #videos .video-experiencia {
-        width: 99%;
-        height: 600px;
-        margin: 0;
-    }
-
-    #videos .video-link {
-        display: block;
-        width: 100%;
-        position: relative;
-        overflow: hidden;
-        border-radius: 0;
-    }
-
-    #videos .video-link img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-}
-
-}
-
-/* =========================================================
-   VIDEO EXPERIENCIA — REPRODUCTOR CINEMATOGRÁFICO
-   ========================================================= */
-
-.video-player {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background: #000;
-}
-
-.video-player video {
-    display: block;
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-}
-
-/* BOTÓN DE SONIDO */
-
-.sound-toggle {
-    position: absolute;
-    right: 18px;
-    bottom: 18px;
-
-    width: 48px;
-    height: 48px;
-
-    border: 1px solid rgba(255,255,255,0.35);
-    border-radius: 50%;
-
-    background: rgba(0,0,0,0.65);
-    backdrop-filter: blur(8px);
-
-    color: white;
-    font-size: 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    cursor: pointer;
-
-    z-index: 10;
-
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease;
-}
-
-.sound-toggle:active {
-    transform: scale(0.92);
-}
-
-.sound-toggle:hover {
-    background: rgba(0,0,0,0.85);
-}
 
 .video-container {
-    width: 100%;
-    margin-top: 30px;
-    overflow: hidden;
-    border-radius: 20px;
-    background: #000;
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto 0;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #000;
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(212, 175, 55, 0.15);
 }
 
 .video-experiencia {
-    display: block;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  object-fit: contain;
+  background: #000;
+}
+
+/* =========================================================
+   RESPONSIVE FINAL
+   Mobile: 1 columna
+   Tablet: 2 columnas
+   Desktop / TV: 3 columnas
+   ========================================================= */
+
+@media (max-width: 767px) {
+  .services-section {
+    padding: 72px 18px 80px;
+    box-sizing: border-box;
+  }
+
+  .section-header {
     width: 100%;
+    margin-bottom: 42px;
+    text-align: left;
+  }
+
+  .section-header .section-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  .section-header h2 {
+    font-size: clamp(38px, 12vw, 52px);
+    line-height: 0.98;
+    letter-spacing: -2px;
+    margin-bottom: 18px;
+  }
+
+  .section-header p {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+    gap: 26px;
+    margin: 0;
+    background: transparent;
+    border: 0;
+  }
+
+  .service-card {
+    width: 100%;
+    min-height: 0;
     height: auto;
-    max-height: 700px;
-    object-fit: contain;
-    background: #000;
+    aspect-ratio: 16 / 10;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-position: center center;
+    display: flex;
+    align-items: flex-end;
+    transform: none;
+  }
+
+  .service-card:hover {
+    transform: none;
+  }
+
+  .service-content {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    padding: 22px 20px;
+  }
+
+  .service-number {
+    position: static;
+    display: block;
+    margin-bottom: 7px;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .service-content h3 {
+    margin: 0 0 7px;
+    font-size: clamp(24px, 7vw, 31px);
+    line-height: 1;
+  }
+
+  .service-content p {
+    margin: 0 0 12px;
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .service-link {
+    font-size: 11px;
+    letter-spacing: 0.8px;
+  }
+
+  #videos .container {
+    width: 100%;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #videos .section-heading {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  #videos .video-container {
+    width: 100vw;
+    max-width: none;
+    margin: 24px 0 0 calc(50% - 50vw);
+    border-radius: 0;
+  }
+
+  #videos .video-experiencia {
+    width: 100%;
+    height: 600px;
+    max-height: none;
+    object-fit: cover;
+  }
 }
 
-@media (max-width: 767px) {
-    .video-container {
-        width: 100%;
-        margin-top: 24px;
-        border-radius: 18px;
-    }
+/* VERY SMALL PHONES */
+@media (max-width: 380px) {
+  .artist-section .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-    .video-experiencia {
-        width: 100%;
-        height: auto;
-        min-height: 220px;
-    }
-}@media (max-width: 767px) {
+  .services-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-    .video-container {
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-        margin-right: calc(50% - 50vw);
-        margin-top: 24px;
-        border-radius: 0;
-        overflow: hidden;
-    }
+  .artist-photo {
+    aspect-ratio: 3 / 4;
+  }
 
-    .video-experiencia {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        object-fit: cover;
-    }
+  .service-card {
+    aspect-ratio: 4 / 3;
+  }
 
+  .service-content {
+    padding: 18px;
+  }
+
+  .service-content p {
+    font-size: 12px;
+  }
 }
 
-/* =========================================================
-   SERVICIOS — RESPONSIVE FINAL
-   Mobile: 1 | Tablet: 2 | Desktop/TV: 3
-   ========================================================= */
-
-/* 📱 CELULAR */
-@media (max-width: 767px) {
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-/* 📲 TABLET */
+/* TABLET */
 @media (min-width: 768px) and (max-width: 1023px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
 
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
+  #videos .video-container {
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  #videos .video-experiencia {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+  }
 }
 
-/* 💻 PC + TV */
+/* DESKTOP / TV */
 @media (min-width: 1024px) {
-
-    .services-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
-    }
-
-}
-
-/* =========================================================
-   VIDEO — TABLET
-   Más ancho y más alto
-   ========================================================= */
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-    #videos .video-container {
-        width: 100%;
-        max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #videos .video-experiencia {
-        width: 100%;
-        height: 1020px;
-        object-fit: cover;
-    }
-
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
 }
