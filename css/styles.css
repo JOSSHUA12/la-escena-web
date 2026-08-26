@@ -1984,7 +1984,7 @@ img {
   position: relative;
   z-index: 2;
   margin: 0 0 auto;
-  font-size: 11px;
+  font-size: 15px;
   letter-spacing: 3px;
   color: #c9a227;
 }
@@ -2073,8 +2073,9 @@ img {
 .pillar-back-label {
   position: absolute;
   right: 28px;
-  bottom: 25px;
-  font-size: 8px;
+  bottom: 2px;
+  font-size: 13px;
+  font-weight: 600;
   letter-spacing: 3px;
   color: rgba(201,162,39,.8);
 }
@@ -2138,13 +2139,13 @@ img {
   }
 
   .pillar-back p {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.55;
   }
 
   .pillar-back-label {
-    right: 24px;
-    bottom: 21px;
+    right: 15px;
+    bottom: 12px;
   }
 
   .pillar-flip.is-flipped .pillar-flip-inner {
