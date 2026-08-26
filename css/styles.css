@@ -2537,3 +2537,17 @@ img {
   }
 
 }
+.section {
+    padding: 150px 0;
+    background: #f3f3f3;
+    color: #111;
+}
+
+@media (max-width: 767px) {
+
+    .section {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+}
