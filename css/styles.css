@@ -2313,3 +2313,227 @@ img {
   }
 
 }
+
+
+/* =========================================================
+   LA EMPRESA — INDICADOR TÁCTIL
+   DEDO + ONDAS DE TOQUE
+   ========================================================= */
+
+.pillar-touch-hint {
+  display: none;
+}
+
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .pillar-touch-hint {
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 70px;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+
+    width: 125px;
+    height: 72px;
+
+    color: #c9a227;
+
+    pointer-events: none;
+
+    z-index: 5;
+
+  }
+
+
+  /* -------------------------------------------------------
+     DEDO
+     ------------------------------------------------------- */
+
+  .touch-finger {
+
+    position: relative;
+
+    width: 31px;
+    height: 31px;
+
+    color: #c9a227;
+
+    z-index: 3;
+
+    animation:
+      finger-tap 1.8s
+      cubic-bezier(.45,0,.55,1)
+      infinite;
+
+  }
+
+
+  /* -------------------------------------------------------
+     TEXTO
+     ------------------------------------------------------- */
+
+  .touch-text {
+
+    margin-top: 3px;
+
+    font-size: 9px;
+
+    line-height: 1;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    color: rgba(201,162,39,.85);
+
+    white-space: nowrap;
+
+    animation:
+      touch-text-pulse 1.8s ease-in-out infinite;
+
+  }
+
+
+  /* -------------------------------------------------------
+     CÍRCULOS DE TOQUE
+     ------------------------------------------------------- */
+
+  .touch-ring {
+
+    position: absolute;
+
+    left: 50%;
+    top: 13px;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid rgba(201,162,39,.7);
+
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%) scale(.35);
+
+    opacity: 0;
+
+    animation:
+      touch-ring 1.8s ease-out infinite;
+
+  }
+
+
+  .touch-ring-2 {
+
+    animation-delay: .45s;
+
+  }
+
+
+  /* =====================================================
+     ANIMACIÓN DEL DEDO
+     ===================================================== */
+
+  @keyframes finger-tap {
+
+    0% {
+      transform: translateY(0) scale(1);
+    }
+
+    25% {
+      transform: translateY(6px) scale(.94);
+    }
+
+    45% {
+      transform: translateY(0) scale(1);
+    }
+
+    100% {
+      transform: translateY(0) scale(1);
+    }
+
+  }
+
+
+  /* =====================================================
+     ANIMACIÓN DE LAS ONDAS
+     ===================================================== */
+
+  @keyframes touch-ring {
+
+    0% {
+      opacity: 0;
+      transform:
+        translate(-50%, -50%)
+        scale(.35);
+    }
+
+    20% {
+      opacity: .75;
+    }
+
+    70% {
+      opacity: 0;
+      transform:
+        translate(-50%, -50%)
+        scale(1.45);
+    }
+
+    100% {
+      opacity: 0;
+      transform:
+        translate(-50%, -50%)
+        scale(1.45);
+    }
+
+  }
+
+
+  /* =====================================================
+     TEXTO
+     ===================================================== */
+
+  @keyframes touch-text-pulse {
+
+    0%,
+    100% {
+      opacity: .65;
+    }
+
+    45% {
+      opacity: 1;
+    }
+
+  }
+
+}
+
+
+/* =========================================================
+   TELÉFONOS MUY PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+  .pillar-touch-hint {
+
+    bottom: 18px;
+
+    transform: translateX(-50%) scale(.92);
+
+  }
+
+}
