@@ -2551,3 +2551,78 @@ img {
     }
 
 }
+
+/* =========================================================
+   HEADER INTELIGENTE — ESTADO COMPACTO AL HACER SCROLL
+   ========================================================= */
+
+.header {
+    transition:
+        background 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.header .nav {
+    transition:
+        min-height 0.35s ease,
+        padding 0.35s ease;
+}
+
+.header .brand img {
+    transition:
+        width 0.35s ease,
+        transform 0.35s ease;
+}
+
+
+/* =========================================================
+   HEADER COMPACTO
+   Se activa mediante JavaScript
+   ========================================================= */
+
+.header.scrolled {
+    background: rgba(5, 5, 5, 0.96);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.18);
+}
+
+.header.scrolled .nav {
+    min-height: 62px;
+}
+
+.header.scrolled .brand img {
+    width: 210px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .header.scrolled .nav {
+        min-height: 60px;
+    }
+
+    .header.scrolled .brand img {
+        width: 130px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .header.scrolled .nav {
+        min-height: 56px;
+    }
+
+    .header.scrolled .brand img {
+        width: 120px;
+    }
+
+}
