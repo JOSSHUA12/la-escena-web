@@ -711,7 +711,7 @@ a {
 .artist-bottom > p {
   margin: 0;
 
-  color: #888;
+  color: #ccc9c9;
 
   font-size: 14px;
 
@@ -787,7 +787,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  background: #333;
+  background: #000000;
 }
 
 .service {
@@ -807,7 +807,7 @@ a {
 }
 
 .service p {
-  color: #999;
+  color: #b8b5b5;
 }
 
 .services-section {
