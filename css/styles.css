@@ -1000,13 +1000,14 @@ a {
 .events-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1px;
-  background: #333;
+  gap: 10px;
+  background: #ffffff;
 }
 
 .events-grid > div {
   padding: 45px;
   background: #151515;
+  border-radius: 30px 0 30px 0;
 }
 
 .events-grid h3 {
@@ -2540,7 +2541,7 @@ img {
 .section {
     padding: 150px 0;
     background: #f3f3f3;
-    color: #111;
+    color: #151414;
 }
 
 @media (max-width: 767px) {
@@ -2821,3 +2822,464 @@ img {
   </article>
 
 </div>
+
+/* =========================================================
+   LA ESCENA
+   EXPERIENCIAS — NUEVO DISEÑO
+   ========================================================= */
+
+#experiencias .experience-grid {
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr)) !important;
+
+  gap: 28px;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   TARJETA
+   ========================================================= */
+
+#experiencias .experience-card {
+  position: relative !important;
+
+  display: block !important;
+
+  min-height: 430px !important;
+
+  padding: 0 !important;
+
+  overflow: hidden;
+
+  background: #0b0b0b !important;
+
+  border: 1px solid rgba(212, 175, 55, 0.20) !important;
+
+  border-radius: 2px 28px 2px 28px !important;
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.18) !important;
+
+  isolation: isolate;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease,
+    border-color 0.45s ease;
+}
+
+
+/* =========================================================
+   IMAGEN
+   ========================================================= */
+
+#experiencias .experience-image {
+  position: absolute !important;
+
+  inset: 0 !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  z-index: -3;
+
+  overflow: hidden;
+}
+
+
+#experiencias .experience-image img {
+  display: block;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transform: scale(1);
+
+  transition:
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================================
+   CAPA OSCURA
+   ========================================================= */
+
+#experiencias .experience-card::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  z-index: -2;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.10) 0%,
+      rgba(0, 0, 0, 0.20) 35%,
+      rgba(0, 0, 0, 0.90) 100%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   NÚMERO
+   ========================================================= */
+
+#experiencias .experience-number {
+  position: absolute !important;
+
+  top: 24px !important;
+  left: 24px !important;
+
+  z-index: 5;
+
+  display: block !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #D4AF37 !important;
+
+  font-size: 14px !important;
+  font-weight: 600 !important;
+
+  line-height: 1 !important;
+
+  letter-spacing: 0.18em;
+
+  background: transparent !important;
+
+  border: 0 !important;
+
+  box-shadow: none !important;
+}
+
+
+/* =========================================================
+   CONTENIDO
+   ========================================================= */
+
+#experiencias .experience-content {
+  position: absolute !important;
+
+  left: 28px !important;
+  right: 28px !important;
+  bottom: 30px !important;
+
+  z-index: 5;
+
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* =========================================================
+   ETIQUETA
+   ========================================================= */
+
+#experiencias .experience-label {
+  display: block !important;
+
+  margin: 0 0 9px !important;
+  padding: 0 !important;
+
+  color: #D4AF37 !important;
+
+  font-size: 9px !important;
+  font-weight: 600 !important;
+
+  line-height: 1.3 !important;
+
+  letter-spacing: 0.22em;
+
+  background: transparent !important;
+}
+
+
+/* =========================================================
+   TÍTULO
+   ========================================================= */
+
+#experiencias .experience-content h3 {
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+
+  color: #ffffff !important;
+
+  font-size: 30px !important;
+  font-weight: 600 !important;
+
+  line-height: 1.1 !important;
+
+  background: transparent !important;
+}
+
+
+/* =========================================================
+   DESCRIPCIÓN
+   ========================================================= */
+
+#experiencias .experience-content p {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  max-width: 340px;
+
+  color: rgba(255, 255, 255, 0.78) !important;
+
+  font-size: 14px !important;
+
+  line-height: 1.6 !important;
+
+  background: transparent !important;
+}
+
+
+/* =========================================================
+   DESCUBRIR
+   ========================================================= */
+
+#experiencias .experience-link {
+  display: inline-flex !important;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 20px !important;
+  padding: 0 !important;
+
+  color: #ffffff !important;
+
+  font-size: 10px !important;
+  font-weight: 600 !important;
+
+  line-height: 1 !important;
+
+  letter-spacing: 0.18em;
+
+  background: transparent !important;
+
+  border: 0 !important;
+
+  box-shadow: none !important;
+
+  transition:
+    color 0.3s ease,
+    gap 0.3s ease;
+}
+
+
+#experiencias .experience-link span {
+  position: static !important;
+
+  display: inline !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #D4AF37 !important;
+
+  font-size: 16px !important;
+
+  line-height: 1 !important;
+
+  background: transparent !important;
+}
+
+
+/* =========================================================
+   ESQUINA DORADA
+   ========================================================= */
+
+#experiencias .experience-corner {
+  position: absolute !important;
+
+  top: 0 !important;
+  right: 0 !important;
+
+  width: 58px !important;
+  height: 58px !important;
+
+  z-index: 4;
+
+  display: block !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: #D4AF37 !important;
+
+  clip-path:
+    polygon(
+      100% 0,
+      100% 100%,
+      0 0
+    );
+
+  opacity: 0.95;
+
+  transition:
+    width 0.4s ease,
+    height 0.4s ease;
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 1024px) {
+
+  #experiencias .experience-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color:
+      rgba(212, 175, 55, 0.50) !important;
+
+    box-shadow:
+      0 25px 55px rgba(0, 0, 0, 0.28) !important;
+  }
+
+
+  #experiencias .experience-card:hover
+  .experience-image img {
+
+    transform: scale(1.035);
+  }
+
+
+  #experiencias .experience-card:hover
+  .experience-link {
+
+    gap: 15px;
+
+    color: #D4AF37 !important;
+  }
+
+
+  #experiencias .experience-card:hover
+  .experience-corner {
+
+    width: 70px !important;
+    height: 70px !important;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   2 COLUMNAS
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  #experiencias .experience-grid {
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+
+    gap: 24px !important;
+  }
+
+
+  #experiencias .experience-card {
+
+    min-height: 420px !important;
+  }
+
+
+  #experiencias .experience-content {
+
+    left: 24px !important;
+    right: 24px !important;
+    bottom: 26px !important;
+  }
+
+}
+
+
+/* =========================================================
+   CELULAR
+   1 COLUMNA
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  #experiencias .experience-grid {
+
+    grid-template-columns:
+      1fr !important;
+
+    gap: 22px !important;
+  }
+
+
+  #experiencias .experience-card {
+
+    min-height: 390px !important;
+
+    border-radius:
+      2px 22px 2px 22px !important;
+  }
+
+
+  #experiencias .experience-number {
+
+    top: 20px !important;
+    left: 20px !important;
+  }
+
+
+  #experiencias .experience-content {
+
+    left: 22px !important;
+    right: 22px !important;
+    bottom: 24px !important;
+  }
+
+
+  #experiencias .experience-content h3 {
+
+    font-size: 26px !important;
+  }
+
+
+  #experiencias .experience-content p {
+
+    font-size: 13px !important;
+  }
+
+
+  #experiencias .experience-corner {
+
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+}
+
+.events{
+  color: rgb(233, 227, 227);
+}
+
+.events-card{
+  border-radius: 10px 0 20px 0;
+  background-color: red;
+}
