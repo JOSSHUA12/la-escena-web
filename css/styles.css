@@ -240,7 +240,7 @@ a {
 .hero h1 {
   max-width: 900px;
 
-  font-size: clamp(47px, 7vw, 98px);
+  font-size: clamp(45px, 6vw, 90px);
 
   line-height: 0.88;
 
@@ -250,7 +250,7 @@ a {
 
   text-transform: uppercase;
 
-  animation: heroTitle 1s ease forwards;
+  animation: heroTitle 1.3s ease forwards;
 }
 
 .hero h1 strong {
@@ -274,7 +274,7 @@ a {
 
   color: #dad8d8;
 
-  font-size: 17px;
+  font-size: 15px;
 
   line-height: 1.7;
 
@@ -672,7 +672,7 @@ a {
 .artist-photo-caption span {
   color: #c9a227;
 
-  font-size: 11px;
+  font-size: 15px;
 
   font-weight: 800;
 
@@ -737,7 +737,7 @@ a {
 
   color: #c9a227;
 
-  font-size: 8px;
+  font-size: 10px;
 
   font-weight: 700;
 
@@ -1314,7 +1314,7 @@ img {
   }
 
   .artist-photo-caption span {
-    font-size: 8px;
+    font-size: 13px;
     letter-spacing: 2.5px;
   }
 
@@ -1523,7 +1523,7 @@ img {
   }
 
   .section-header .section-label {
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 3px;
   }
 
@@ -1579,7 +1579,7 @@ img {
     position: static;
     display: block;
     margin-bottom: 7px;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 2px;
   }
 
@@ -1597,7 +1597,7 @@ img {
   }
 
   .service-link {
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 0.8px;
   }
 
@@ -2370,7 +2370,7 @@ img {
     width: 31px;
     height: 31px;
 
-    color: #c9a227;
+    color: #e3b211;
 
     z-index: 3;
 
@@ -2398,7 +2398,7 @@ img {
 
     text-transform: uppercase;
 
-    color: rgba(201,162,39,.85);
+    color: rgba(219, 173, 21, 0.93);
 
     white-space: nowrap;
 
@@ -2422,7 +2422,7 @@ img {
     width: 30px;
     height: 30px;
 
-    border: 1px solid rgba(201,162,39,.7);
+    border: 1px solid rgba(219, 173, 21, 0.93);
 
     border-radius: 50%;
 
