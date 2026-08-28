@@ -1942,7 +1942,7 @@ img {
   box-sizing: border-box;
   overflow: hidden;
   border: 1px solid rgba(20, 20, 20, 0.14);
-  border-radius: 2px;
+  border-radius: 13px 0 13px 0;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
@@ -2748,3 +2748,76 @@ img {
   }
 
 }
+
+
+<div class="experience-grid">
+
+  <!-- EXPERIENCIA 01 -->
+  <article
+    class="experience-card"
+    style="--experience-image: url('assets/fotos/servicio-musica.jpg');"
+  >
+    <div class="experience-image"></div>
+
+    <div class="experience-number">01</div>
+
+    <div class="experience-content">
+      <span class="experience-label">EXPERIENCIA MUSICAL</span>
+      <h3>Solo música</h3>
+      <p>La Escena Grupo Musical.</p>
+
+      <span class="experience-link">
+        DESCUBRIR <span>→</span>
+      </span>
+    </div>
+
+    <div class="experience-corner"></div>
+  </article>
+
+
+  <!-- EXPERIENCIA 02 -->
+  <article
+    class="experience-card"
+    style="--experience-image: url('assets/fotos/servicio-produccion-tecnica.jpg');"
+  >
+    <div class="experience-image"></div>
+
+    <div class="experience-number">02</div>
+
+    <div class="experience-content">
+      <span class="experience-label">PRODUCCIÓN</span>
+      <h3>Show + producción</h3>
+      <p>Música, sonido e iluminación.</p>
+
+      <span class="experience-link">
+        DESCUBRIR <span>→</span>
+      </span>
+    </div>
+
+    <div class="experience-corner"></div>
+  </article>
+
+
+  <!-- EXPERIENCIA 03 -->
+  <article
+    class="experience-card"
+    style="--experience-image: url('assets/fotos/servicio-experiencias.jpg');"
+  >
+    <div class="experience-image"></div>
+
+    <div class="experience-number">03</div>
+
+    <div class="experience-content">
+      <span class="experience-label">EXPERIENCIA COMPLETA</span>
+      <h3>Experiencia completa</h3>
+      <p>Artistas, música, DJ, producción y espectáculo.</p>
+
+      <span class="experience-link">
+        DESCUBRIR <span>→</span>
+      </span>
+    </div>
+
+    <div class="experience-corner"></div>
+  </article>
+
+</div>
